@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" android:orientation="vertical">
+    <org.ros.rosjava.android.views.RosImageView
+		android:id="@+id/image" 
+		android:scaleType="centerCrop"
+    	android:layout_height="fill_parent"    	
+    	android:layout_width="fill_parent" 
+    	android:background="#00000000" />
+    <TextView android:id="@+id/bg_top"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal|top"
+		android:background="#AA000000"
+        android:textColor="#ffffffff"
+		android:padding="4dip" />
+    <TextView android:id="@+id/acc_x"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/accleration_x"
+		android:layout_gravity="left|top"
+		android:padding="4dip" />
+    <TextView android:id="@+id/acc_y"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/accleration_y"
+		android:layout_gravity="center_horizontal|top"
+		android:padding="4dip" />
+    <TextView android:id="@+id/acc_z"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/accleration_z"
+		android:layout_gravity="right|top"
+		android:padding="4dip" />
+    <Button android:id="@+id/button"
+		android:layout_width="200dip"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal|bottom"
+		android:padding="20dip"
+		android:text="@string/accleration_button" />
+</FrameLayout>

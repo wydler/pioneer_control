@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+        <PreferenceCategory
+            android:title="ROSCore">
+       		<EditTextPreference
+                	android:key="rosmasteruri"
+                	android:title="ROS Master URI"
+                	android:summary="Beispiel: http://141.69.58.226:11311"
+                	android:inputType="textUri" />
+    	</PreferenceCategory>
+        <PreferenceCategory
+            android:title="User Interface">
+        	<CheckBoxPreference
+            	android:title="Videohintergrund"
+                android:defaultValue="true"
+                android:summary="Das Live-Video im Hintergrund anzeigen."
+                android:key="videobg" />
+        </PreferenceCategory>
+</PreferenceScreen>
